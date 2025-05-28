@@ -37,6 +37,67 @@ int main()
     res = a++ * 10;
     cout<< "res =" << res <<endl;//130
     cout<< "a = " << a << endl;//14
+
+    //赋值运算符
+    int num = 10;//普通运算符
+
+    //加等于
+    num += 10;//num = 20;
+    cout<< "num = " << num << endl;
+
+    //减等于
+    num -= 10;
+    cout<< "num = " << num << endl;
+
+    //乘等于
+    num *= 10;
+    cout<< "num = " << num << endl;
+
+    //除等于
+    num /= 10;
+    cout<< "num = " << num << endl;
+
+    //取模等于
+    num %= 5;
+    cout<< "num = " << num << endl;
+
+    //比较运算符
+    //==
+    //注意：C和C++ 语言的比较运算中， ==“真”用数字“1”来表示， “假”用数字“0”来表示。== 
+    int num1 = 10;
+    cout<< "num == num1?"<< (num1==num) << endl;
+
+    //!=
+    cout<< "num != num1?"<< (num1!=num) << endl;
+
+    //>
+    cout<< "num > num1?"<< (num1>num) << endl;
+
+    //<
+    cout<< "num < num1?"<< (num1<num) << endl;
+    
+    //>=
+    cout<< "num >= num1?"<< (num1>=num) << endl;
+
+    //<=
+    cout<< "num <= num1?"<< (num1<=num) << endl;
+
+
+    //逻辑运算符
+    bool F = false;
+
+    //!
+    cout<< "!F = "<< F << endl;
+
+    bool T = true;
+
+    //&&
+    cout<< "F && T = "<< (F && T)<< endl;
+
+    //||
+    cout<< "T || F = " << (F || T)<<endl;
+
+
     system("pause");
     return 0;
 }
